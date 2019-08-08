@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:latest
 
 # LABEL maintainer "Matej Meško <meshosk@gmail.com>"
 
