@@ -3,7 +3,7 @@ Is a simple build script containing Debian (buster) web server for docker image 
 
 * Apache 2
 * Php 7.3
-  * xdebug
+  * xdebug from PECL
   * imagemagick
 * node js
 * composer

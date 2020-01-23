@@ -40,7 +40,7 @@ RUN apt-get install -y php7.3 php7.3-mbstring php7.3-opcache php7.3-xml php7.3-c
 
 # install latest xdebug pecl via pecl
 RUN apt-get install -y php7.3-dev php-pear
-RUN pecl insall xdebug
+RUN pecl install xdebug
 
 RUN apt-get install -y php-imagick
 
