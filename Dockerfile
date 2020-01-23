@@ -37,7 +37,12 @@ RUN apt-get install -y imagemagick
 
 # setup PHP 7.3
 RUN apt-get install -y php7.3 php7.3-mbstring php7.3-opcache php7.3-xml php7.3-curl php7.3-json php7.3-sqlite3 php7.3-mysql php7.3-zip php7.3-gd php7.3-imap
-RUN apt-get install -y php-xdebug php-imagick
+
+# install latest xdebug pecl via pecl
+RUN apt-get install -y php7.3-dev php-pear
+RUN pecl insall xdebug
+
+RUN apt-get install -y php-imagick
 
 # setup node 12
 RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -  && apt-get install -y nodejs
